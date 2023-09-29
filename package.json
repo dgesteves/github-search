@@ -5,15 +5,24 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test-watch": "nx test --watch",
+    "e2e-watch": "nx e2e e2e --watch",
+    "format-write": "nx format --write",
+    "lint": "nx lint"
   },
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.8.4",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.14.11",
+    "@mui/material": "^5.14.11",
     "@swc/helpers": "~0.5.2",
+    "graphql": "^16.8.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "11.11.0",

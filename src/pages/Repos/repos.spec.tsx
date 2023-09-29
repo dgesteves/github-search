@@ -1,15 +1,14 @@
 import { render } from '@testing-library/react';
-
-import App from './app';
+import Repos from './index';
 
 describe('App', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
+    const { baseElement } = render(<Repos />);
     expect(baseElement).toBeTruthy();
   });
 
   it('should have a greeting as the title', () => {
-    const { getByText } = render(<App />);
+    const { getByText } = render(<Repos />);
     expect(getByText(/Welcome github-search/gi)).toBeTruthy();
   });
 });
