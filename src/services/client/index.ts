@@ -10,7 +10,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: `Bearer ${localStorage.getItem('AUTH_TOKEN')}`,
+      authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
     },
   };
 });

@@ -5,10 +5,11 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router';
 import { client } from './services/client';
+import { responsiveTheme } from './ui/theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,8 +17,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <ApolloProvider client={client}>
-      <CssBaseline />
-      <RouterProvider router={router} />
+      <ThemeProvider theme={responsiveTheme}>
+        <CssBaseline />
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </ApolloProvider>
   </StrictMode>
 );
