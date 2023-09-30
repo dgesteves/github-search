@@ -1,5 +1,5 @@
 import { styled, Typography } from '@mui/material';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { grey } from '@mui/material/colors';
 
 export const StyledHeader = styled('header')(({ theme }) => ({
@@ -11,12 +11,12 @@ export const StyledHeader = styled('header')(({ theme }) => ({
   height: '64px',
 }));
 
-export const StyledLogo = styled('div')(({ theme }) => ({
+export const StyledLogo = styled('div')(() => ({
   display: 'flex',
   alignItems: 'center',
 }));
 
-export const StyledLink = styled(Link)(({ theme }) => ({
+export const StyledLink = styled(Link)(() => ({
   textDecoration: 'none',
 }));
 
@@ -27,7 +27,7 @@ export const StyledLogoText = styled(Typography)(({ theme }) => ({
   textTransform: 'uppercase',
 }));
 
-export const StyledTabs = styled('nav')(({ theme }) => ({
+export const StyledTabs = styled('nav')(() => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-evenly',
