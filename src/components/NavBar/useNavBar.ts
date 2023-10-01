@@ -16,8 +16,10 @@ export const useNavBar = () => {
   ];
 
   useEffect(() => {
-    navigate(FINDER_PATH);
-  }, [navigate]);
+    if (location.pathname === '/') {
+      navigate(FINDER_PATH);
+    }
+  }, [location.pathname, navigate]);
 
   return {
     location,

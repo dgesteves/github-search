@@ -5,7 +5,7 @@ import { grey } from '@mui/material/colors';
 export const StyledHeader = styled('header')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
-  backgroundColor: grey[800],
+  backgroundColor: grey[900],
   color: theme.palette.text.primary,
   padding: theme.spacing(2),
   height: '64px',
@@ -43,7 +43,7 @@ export const StyledTab = styled('div')<{ selected: boolean }>(
     borderBottom: selected ? `3px solid ${theme.palette.primary.main}` : 'none',
 
     '&:hover': {
-      borderBottom: `2px solid ${theme.palette.primary.main}`,
+      borderBottom: `3px solid ${theme.palette.primary.main}`,
 
       '& p': {
         color: theme.palette.text.primary,
