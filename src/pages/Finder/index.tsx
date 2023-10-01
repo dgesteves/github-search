@@ -16,7 +16,7 @@ export default function Finder() {
         </StyledCircle>
       </StyledCircle>
       <StyledHeader variant="h1">{HEADER_TEXT}</StyledHeader>
-      <StyledSubHeader variant="h3">{SUB_HEADER_TEXT}</StyledSubHeader>
+      <StyledSubHeader variant="h4">{SUB_HEADER_TEXT}</StyledSubHeader>
       <StyledExampleRepo />
     </StyledFinder>
   );
