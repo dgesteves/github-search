@@ -1,7 +1,7 @@
 import { Card, IconButton, styled } from '@mui/material';
 import { deepPurple, grey } from '@mui/material/colors';
 
-export const StyledCard = styled(Card)(({ theme }) => ({
+export const StyledCard = styled(Card)(() => ({
   maxWidth: 345,
   backgroundColor: grey[900],
   border: 2,
@@ -12,6 +12,6 @@ export const StyledCard = styled(Card)(({ theme }) => ({
   },
 }));
 
-export const StyledIconButton = styled(IconButton)(({ theme }) => ({
+export const StyledIconButton = styled(IconButton)(() => ({
   marginLeft: 'auto',
 }));

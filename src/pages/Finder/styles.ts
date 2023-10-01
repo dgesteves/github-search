@@ -1,7 +1,7 @@
 import { styled, Typography } from '@mui/material';
 import { grey } from '@mui/material/colors';
 
-export const StyledFinder = styled('main')(({ theme }) => ({
+export const StyledFinder = styled('main')(() => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -38,7 +38,7 @@ export const StyledExampleRepo = styled('div')(({ theme }) => ({
   borderRadius: theme.spacing(3),
 }));
 
-export const StyledCircle = styled('div')(({ theme }) => ({
+export const StyledCircle = styled('div')(() => ({
   height: 'calc(100vh - 64px)',
   width: '100vw',
   backgroundImage: `url(src/ui/img/6455e25e2a898c9b7fe25637_hero_circle-smaill-bg.svg)`,

@@ -10,7 +10,7 @@ export const StyledFinder = styled('main')(({ theme }) => ({
   padding: theme.spacing(6),
 }));
 
-export const StyledAlert = styled(Alert)(({ theme }) => ({
+export const StyledAlert = styled(Alert)(() => ({
   width: '50%',
   marginBottom: '40px',
 }));
