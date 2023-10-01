@@ -42,3 +42,11 @@ Your evaluation will be based on the following criteria:
 
 - Github GraphQL API: https://docs.github.com/en/graphql/overview/about-the-graphql-api
 - Material UI: https://mui.com/
+
+# Instructions
+
+## Only had 8 hours during the weekend to work on this, so I didn't get to implement everything I wanted to (e.g. E2e tests, more unit tests, better error handling, etc.)
+
+- Create a Github Personal Access Token and add it to the .env file
+- Run `npm install`
+- Run `npm start`
