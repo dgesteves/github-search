@@ -34,13 +34,14 @@ export const StyledTabs = styled('nav')(() => ({
   flexGrow: 1,
 }));
 
-export const StyledTab = styled('div')<{ selected: boolean }>(
+export const StyledTab = styled(Link)<{ selected: boolean }>(
   ({ theme, selected }) => ({
     display: 'flex',
     alignItems: 'center',
     height: '64px',
     padding: `0 ${theme.spacing(2)}`,
     borderBottom: selected ? `3px solid ${theme.palette.primary.main}` : 'none',
+    textDecoration: 'none',
 
     '&:hover': {
       borderBottom: `3px solid ${theme.palette.primary.main}`,

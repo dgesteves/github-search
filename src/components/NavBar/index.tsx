@@ -25,12 +25,14 @@ export default function NavBar() {
       </StyledLogo>
       <StyledTabs>
         {tabs.map((tab) => (
-          <StyledTab key={tab.name} selected={location.pathname === tab.path}>
-            <StyledLink to={tab.path}>
-              <StyledTabText selected={location.pathname === tab.path}>
-                {tab.name}
-              </StyledTabText>
-            </StyledLink>
+          <StyledTab
+            key={tab.name}
+            to={tab.path}
+            selected={location.pathname === tab.path}
+          >
+            <StyledTabText selected={location.pathname === tab.path}>
+              {tab.name}
+            </StyledTabText>
           </StyledTab>
         ))}
       </StyledTabs>
