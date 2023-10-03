@@ -1,11 +1,11 @@
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarIcon from '@mui/icons-material/Star';
 import { StyledRating, StyledStar } from './styles';
-import { useMemo } from 'react';
 import { RatingProps } from './types';
+import { useCreateArray } from '../../hooks/useCreateArray';
 
 export default function Rating({ rating, setRating }: RatingProps) {
-  const ratings = useMemo(() => [1, 2, 3, 4, 5], []);
+  const ratings = useCreateArray(5);
 
   return (
     <StyledRating>

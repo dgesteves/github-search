@@ -1,8 +1,9 @@
 import { Grid, Skeleton } from '@mui/material';
-import { useMemo } from 'react';
+import { useCreateArray } from '../../hooks/useCreateArray';
 
 export default function SkeletonGrid() {
-  const elements = useMemo(() => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], []);
+  const elements = useCreateArray(12);
+
   return (
     <Grid container spacing={6}>
       {elements.map((element) => (
