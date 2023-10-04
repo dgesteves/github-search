@@ -1,8 +1,8 @@
 import { Grid, Skeleton } from '@mui/material';
 import { useCreateArray } from '../../hooks/useCreateArray';
 
-export default function SkeletonGrid() {
-  const elements = useCreateArray(12);
+export default function SkeletonGrid({ number }: { number: number }) {
+  const elements = useCreateArray(number);
 
   return (
     <Grid container spacing={6}>

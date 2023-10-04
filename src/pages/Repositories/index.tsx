@@ -42,7 +42,7 @@ export default function Repositories() {
         </StyledAlert>
       )}
       {loading ? (
-        <SkeletonGrid />
+        <SkeletonGrid number={20} />
       ) : (
         <Grid container spacing={6}>
           {data?.search?.nodes?.map((node) => {
