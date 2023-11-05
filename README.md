@@ -1,4 +1,4 @@
-# Github Search Interface for React Developer Position
+# Github Search Interface
 
 ## Exercise Instructions:
 
