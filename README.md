@@ -1,14 +1,13 @@
 # Github Search Interface
 
-## Exercise Instructions:
-
-You are tasked with building a Github search interface using React and TypeScript. The interface
+## Task:
+The interface
 should allow users to search for repositories on Github and mark them as favorites. The favorites list
 should be maintained in memory while the user is on the app.
 
 ## Requirements:
 
-1. Use either GraphQL (preferred) or REST API to query Github for repositories based on the
+1. Use either GraphQL API to query Github for repositories based on the
    user's search input.
 2. Display the search results as the user types in the search field, possibly with debounce
    functionality to avoid excessive API calls.
@@ -19,29 +18,8 @@ should be maintained in memory while the user is on the app.
    users to rate their favorite repositories.
 6. Users should also be able to remove items from the favorites list.
 
-## Bonus:
 
-Incorporate Material UI to enhance the user interface. You can use any components from Material UI
-that you find suitable for this project.
-
-## Evaluation:
-
-Your evaluation will be based on the following criteria:
-
-1. Correct implementation of the required features.
-2. Proper state management and component architecture.
-3. Use of TypeScript for fully typed code.
-4. Adherence to best practices in React development.
-5. Effective use of GraphQL or REST API for querying Github.
-6. Proper implementation of the favorites list and its features.
-7. Use of Material UI for enhanced UI components.
-   Please provide clear instructions about how to install and run the application. Feel free to ask any
-   questions if you need further clarification on the exercise. Good luck!
-
-## Resources:
-
-- Github GraphQL API: https://docs.github.com/en/graphql/overview/about-the-graphql-api
-- Material UI: https://mui.com/
+- GitHub GraphQL API: https://docs.github.com/en/graphql/overview/about-the-graphql-api
 
 # Instructions
 
@@ -50,3 +28,5 @@ Your evaluation will be based on the following criteria:
 - Create a Github Personal Access Token and add it to the .env file
 - Run `npm install`
 - Run `npm start`
+
+Demo: https://github-search-iota-bay.vercel.app/
