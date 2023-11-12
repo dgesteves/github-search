@@ -27,7 +27,7 @@ export const StyledSubHeader = styled(Typography)(({ theme }) => ({
 export const StyledExampleRepo = styled('div')(({ theme }) => ({
   height: '90vh',
   width: '40vw',
-  backgroundImage: `url(src/ui/img/example-repo.png)`,
+  backgroundImage: `url(/example-repo.png)`,
   backgroundPosition: '50%',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
@@ -41,7 +41,7 @@ export const StyledExampleRepo = styled('div')(({ theme }) => ({
 export const StyledCircle = styled('div')(() => ({
   height: 'calc(100vh - 64px)',
   width: '100vw',
-  backgroundImage: `url(src/ui/img/6455e25e2a898c9b7fe25637_hero_circle-smaill-bg.svg)`,
+  backgroundImage: `url(/6455e25e2a898c9b7fe25637_hero_circle-smaill-bg.svg)`,
   transform: 'scale(1.2)',
   backgroundPosition: '50%',
   backgroundRepeat: 'no-repeat',
