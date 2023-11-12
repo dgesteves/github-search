@@ -1,5 +1,6 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import * as process from "process";
 
 
 const httpLink = createHttpLink({
@@ -15,6 +16,9 @@ const authLink = setContext((_, { headers }) => {
     },
   };
 });
+
+console.log(import.meta.env.VITE_GITHUB_TOKEN);
+console.log(process.env.VITE_GITHUB_TOKEN);
 
 export const client = new ApolloClient({
   link: authLink.concat(httpLink),
